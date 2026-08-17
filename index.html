@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revlytics — The AI-Native Sales Workspace for Japan's Mid-Market</title>
+<meta name="description" content="Revlytics tells your sales team who to contact today and what to offer — pulling together CRM, spreadsheets, and business cards into one AI-native workspace.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!--
+  ============================================================
+  CONTENT GUIDE FOR WRITERS — read this before editing copy
+  ============================================================
+  This page is a structural skeleton modeled on the section
+  flow of https://cryptcio.arrowtheme.com/home-8/ (Hero > About
+  > Statement banner > Services > Portfolio/Cases > Team > CTA
+  banner > Events > Testimonials > Blog > Partner logos >
+  Newsletter > Footer), re-populated with Revlytics-specific
+  draft copy pulled from docs/business design/00-06.
+
+  Every section below has an HTML comment right above it:
+    SOURCE: which business-design doc this content is grounded in
+    STATUS: "draft" (real material, safe to polish) vs.
+            "PLACEHOLDER" (needs real assets/data before launch —
+            do not ship as-is)
+    GOAL:   what this section needs to accomplish for the reader
+
+  Full brief: apps/website/CONTENT-GUIDE.md
+  ============================================================
+-->
+
+<!-- Top utility bar — STATUS: placeholder contact details -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-links">
+      <a href="tel:+81000000000">[+81 00-0000-0000]</a>
+      <a href="mailto:hello@revlytics.jp">[hello@revlytics.jp]</a>
+    </div>
+    <div class="topbar-lang">
+      <a href="#" class="is-active">EN</a>
+      <a href="#">日本語</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header / Nav -->
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand"><span class="brand-mark"></span>Revlytics</a>
+    <nav class="nav-links">
+      <a href="index.html#product">Product</a>
+      <a href="index.html#features">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">Company</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost">Log In</a>
+      <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<!--
+  SECTION: Hero
+  SOURCE: docs/business design/01_PR＆FAQ.md (press release headline/value prop)
+  STATUS: draft
+  GOAL: In one sentence, tell a sales manager exactly what happens when they
+        open the product for the first time. Avoid the word "AI" doing all
+        the work in the headline — lead with the outcome.
+-->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">AI-Native Sales Workspace</div>
+      <h1 class="hero-title">Know exactly <span class="accent">who to contact today</span> — and what to offer them</h1>
+      <p class="hero-sub">Revlytics pulls together your CRM, spreadsheets, and business cards, and tells every rep who's worth calling this morning and why — before they open anything else.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary btn-lg">Start 14-Day Free Trial</a>
+        <a href="#how-it-works" class="btn btn-outline-invert btn-lg">See How It Works</a>
+      </div>
+      <p class="hero-fine">No credit card required · Works alongside your existing CRM</p>
+    </div>
+    <div class="hero-visual">
+      [PLACEHOLDER — product screenshot or short looping demo of the Home
+      screen: priority accounts list + persistent AI chat panel.
+      Recommend a real screenshot once Phase 1 UI is stable; do not use
+      generic stock dashboard imagery.]
+    </div>
+  </div>
+</section>
+
+<!-- Proof strip — STATUS: PLACEHOLDER, needs real pilot metrics before launch -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>🔎 [X]% of dormant accounts surfaced in first scan — TBD from pilot data</span>
+    <span>⏱ [X] hours/week saved on activity logging — TBD from pilot data</span>
+    <span>📇 [X],000+ business cards digitized — TBD from pilot data</span>
+    <span>🤝 Built for 製造業 · 商社 · B2Bサービス業 — mid-market Japan</span>
+    <span>🔎 [X]% of dormant accounts surfaced in first scan — TBD from pilot data</span>
+    <span>⏱ [X] hours/week saved on activity logging — TBD from pilot data</span>
+    <span>📇 [X],000+ business cards digitized — TBD from pilot data</span>
+    <span>🤝 Built for 製造業 · 商社 · B2Bサービス業 — mid-market Japan</span>
+  </div>
+</div>
+
+<!--
+  SECTION: Problem (site's "About" equivalent)
+  SOURCE: docs/business design/00_Problem Definition.md, §2 顕在化している営業現場の課題
+  STATUS: draft — grounded directly in the Problem Definition doc's 3
+          root-cause clusters (workforce, CRM fatigue, tribal knowledge)
+  GOAL: reader should think "yes, that's exactly my Monday morning"
+-->
+<section class="section" id="product">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">The Problem</div>
+      <h2 class="section-title">Your best sales opportunities are buried in spreadsheets and business cards</h2>
+      <p class="section-sub">Three forces compound the problem for Japan's mid-market sales teams.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="icon">📉</div>
+        <h3>A shrinking sales workforce</h3>
+        <p>Fewer reps are covering more accounts than ever, with no time left to prospect dormant or past customers.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🗄️</div>
+        <h3>CRM/SFA that nobody uses</h3>
+        <p>Built for management reporting, not the rep's morning — so data entry feels like a tax, and adoption erodes.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon">🧠</div>
+        <h3>Tribal knowledge instead of process</h3>
+        <p>Prioritization and pitch content live in individual reps' heads. When they leave, the knowledge leaves too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  SECTION: Statement banner (site's "We are crypto advisor" bold mid-page line)
+  SOURCE: docs/business design/01_PR＆FAQ.md, Internal FAQ Q2 (differentiation)
+  STATUS: draft
+-->
+<section class="statement">
+  <div class="container">
+    <h2>We're not another CRM. We're the screen your reps open first.</h2>
+    <p>Every CRM will have "AI" soon. Revlytics wins by owning the first five minutes of a rep's day — the moment that decides where their time goes.</p>
+    <a href="about.html#moat" class="btn btn-on-dark btn-lg">Why This Is Different</a>
+  </div>
+</section>
+
+<!--
+  SECTION: Who it's for (persona value props)
+  SOURCE: docs/business design/03_Business Design.md, §1 提供価値
+  STATUS: draft — value props map 1:1 to the three named audiences in the doc
+  GOAL: give each persona (rep / manager / exec) their own reason to care
+-->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Who It's For</div>
+      <h2 class="section-title">One workspace, a reason for everyone to open it</h2>
+    </div>
+    <div class="persona-tabs">
+      <button class="persona-tab is-active" data-persona="rep">Sales Reps</button>
+      <button class="persona-tab" data-persona="manager">Sales Managers</button>
+      <button class="persona-tab" data-persona="exec">Executives</button>
+    </div>
+
+    <div class="persona-panel is-active" data-persona="rep">
+      <div>
+        <h3>Start the day already knowing what to do</h3>
+        <ul class="value-list">
+          <li>See today's priority accounts and the reason behind each one</li>
+          <li>Ask the AI assistant "what should I offer this customer?" and get an answer grounded in their actual history</li>
+          <li>Log a call or voice memo and let it become an activity record automatically — no end-of-day paperwork</li>
+        </ul>
+      </div>
+      <div class="hero-visual" style="min-height:220px;">[PLACEHOLDER — Home screen screenshot: priority list + chat]</div>
+    </div>
+    <div class="persona-panel" data-persona="manager">
+      <div>
+        <h3>Less tribal knowledge, more repeatable process</h3>
+        <ul class="value-list">
+          <li>Reduce dependence on any one rep's memory of "who's warm"</li>
+          <li>Standardize how the team prioritizes and pitches</li>
+          <li>Watch activity and pipeline data accumulate automatically as the team works</li>
+        </ul>
+      </div>
+      <div class="hero-visual" style="min-height:220px;">[PLACEHOLDER — deal list / opportunity view screenshot]</div>
+    </div>
+    <div class="persona-panel" data-persona="exec">
+      <div>
+        <h3>Maximize revenue from the team you already have</h3>
+        <ul class="value-list">
+          <li>Surface revenue sitting in dormant accounts and half-finished deals</li>
+          <li>Build a durable sales-data asset instead of relying on individual reps</li>
+          <li>Lay the foundation for a future revenue platform, not just a sales tool</li>
+        </ul>
+      </div>
+      <div class="hero-visual" style="min-height:220px;">[PLACEHOLDER — dashboard / executive rollup screenshot]</div>
+    </div>
+  </div>
+</section>
+
+<!--
+  SECTION: How it works (site's step-flow equivalent)
+  SOURCE: docs/business design/04_Product Requirements & Architecture.md, §3 価値を得るまでの流れ
+  STATUS: draft — this is the literal 6-step To-Be flow from the PRD, tightened to 3 beats
+  GOAL: make the human-in-the-loop design obvious — AI recommends, rep decides
+-->
+<section class="section" id="how-it-works">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">How It Works</div>
+      <h2 class="section-title">From login to logged activity, in one flow</h2>
+    </div>
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Open Revlytics, see today's priorities</h3>
+        <p>The Home screen shows the accounts worth contacting today, why, and what to say — before you touch your CRM or inbox.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Ask the AI, decide, act</h3>
+        <p>The persistent chat assistant already knows the context of whatever you're looking at. You ask, review, edit — and reach out by whatever channel makes sense.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>It logs itself and syncs</h3>
+        <p>Voice notes, calls, and emails become activity records automatically, and sync back to your existing CRM — no separate data-entry pass.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  SECTION: Features (site's "Services" 4-card grid)
+  SOURCE: docs/business design/04_Product Requirements & Architecture.md, §5 Functional Requirements (Must)
+  STATUS: draft — 4 of the 10 "Must" requirements chosen as the headline features;
+          content writer should confirm these are still the 4 most demo-able once
+          Phase 1 build is further along.
+  GOAL: each card = one concrete, demoable capability, not a vague AI claim
+-->
+<section class="section section--soft" id="features">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">What Revlytics Does</div>
+      <h2 class="section-title">Four capabilities, one workspace</h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-tag must">Must-have</span>
+        <div class="icon">🎯</div>
+        <h3>Priority Account Recommendations</h3>
+        <p>AI scores and ranks who's worth contacting today, using contract status, deal history, and touchpoint data — reps can always override.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-tag must">Must-have</span>
+        <div class="icon">💬</div>
+        <h3>Persistent, Context-Aware AI Chat</h3>
+        <p>Docked on every screen. Ask about the customer, deal, or product you're currently viewing — no need to re-explain context each time.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-tag must">Must-have</span>
+        <div class="icon">🎙️</div>
+        <h3>Voice, Text &amp; Form Capture</h3>
+        <p>Drop in a voice memo, paste notes, or fill a form — Revlytics structures it into an activity record automatically.</p>
+      </div>
+      <div class="feature-card">
+        <span class="feature-tag must">Must-have</span>
+        <div class="icon">🔄</div>
+        <h3>Bidirectional CRM Sync</h3>
+        <p>Works alongside Salesforce and HubSpot where they exist, and stands on its own as a full workspace where they don't.</p>
+      </div>
+    </div>
+    <p class="text-center mt-48"><a href="about.html#roadmap">See the full feature roadmap →</a></p>
+  </div>
+</section>
+
+<!--
+  SECTION: Built for teams like yours (site's "Recent Cases" filterable portfolio grid)
+  SOURCE: docs/business design/02_Market Intelligence.md, §8 推奨ターゲットセグメント
+          + docs/business design/01_PR＆FAQ.md, External FAQ Q5
+  STATUS: PLACEHOLDER — these are illustrative target-segment scenarios, not
+          real customer case studies (none exist pre-pilot). Replace each
+          card with a real logo + outcome as soon as a pilot completes.
+  GOAL: help a specific reader ("that's a company like mine") self-identify
+-->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Built For Teams Like Yours</div>
+      <h2 class="section-title">Where Revlytics fits best today</h2>
+      <p class="section-sub">Illustrative scenarios based on our target segments — not yet real customer stories. <span class="tag-todo">REPLACE WITH REAL CASE STUDIES</span></p>
+    </div>
+    <div class="filter-bar">
+      <button class="filter-btn is-active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="mfg">Manufacturing</button>
+      <button class="filter-btn" data-filter="trading">Trading Companies</button>
+      <button class="filter-btn" data-filter="b2b">B2B Services</button>
+    </div>
+    <div class="case-grid">
+      <div class="case-card" data-cat="mfg">
+        <div class="thumb">[PLACEHOLDER LOGO/PHOTO]</div>
+        <div class="body">
+          <span class="badge">Manufacturing</span>
+          <h3>[Company Name] — mid-size industrial parts manufacturer</h3>
+          <p>A sales team of 8 with a decade of dormant-client records in spreadsheets, no dedicated sales-ops function.</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="trading">
+        <div class="thumb">[PLACEHOLDER LOGO/PHOTO]</div>
+        <div class="body">
+          <span class="badge">Trading Company (商社)</span>
+          <h3>[Company Name] — regional trading company</h3>
+          <p>Deep relationship-based sales culture, business cards from years of trade shows never digitized.</p>
+        </div>
+      </div>
+      <div class="case-card" data-cat="b2b">
+        <div class="thumb">[PLACEHOLDER LOGO/PHOTO]</div>
+        <div class="body">
+          <span class="badge">B2B Services</span>
+          <h3>[Company Name] — professional/B2B services firm</h3>
+          <p>Legacy CRM purchased years ago, largely abandoned by the field team due to input burden.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  SECTION: Team (founders)
+  SOURCE: docs/business design/01_PR＆FAQ.md (press release byline)
+  STATUS: draft names / PLACEHOLDER bios — confirm bios, headshots, and
+          LinkedIn URLs with founders directly.
+-->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Who's Behind Revlytics</div>
+      <h2 class="section-title">Built by Vantage Partners</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">[PHOTO]</div>
+        <h3>Hiroki Yamaguchi</h3>
+        <div class="team-role">Co-Founder</div>
+        <p>[PLACEHOLDER BIO — background, prior companies, why this problem]</p>
+        <div class="socials"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">𝕏</a></div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">[PHOTO]</div>
+        <h3>Mashiur Rahman</h3>
+        <div class="team-role">Co-Founder</div>
+        <p>[PLACEHOLDER BIO — background, prior companies, why this problem]</p>
+        <div class="socials"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="X">𝕏</a></div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">＋</div>
+        <h3>We're Hiring</h3>
+        <div class="team-role">Join Early</div>
+        <p>Product, engineering, and customer-success roles opening as we approach first pilots.</p>
+        <div class="socials"><a href="contact.html">See open roles →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  SECTION: CTA banner (site's "Looking for Cryptocurrency Expert?" mid-page CTA)
+  SOURCE: n/a — structural CTA
+  STATUS: draft
+-->
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2>See it on your own data</h2>
+        <p>Bring a spreadsheet or a stack of business cards — we'll show you what Revlytics finds in it.</p>
+      </div>
+      <a href="contact.html" class="btn btn-on-dark btn-lg">Book a Demo</a>
+    </div>
+  </div>
+</section>
+
+<!--
+  SECTION: Events / Webinars (site's "Upcoming Events")
+  SOURCE: docs/business design/03_Business Design.md, §3 販売チャネル (セミナー・ウェビナー)
+  STATUS: PLACEHOLDER — no events scheduled yet; remove this section entirely
+          if none are planned before launch rather than shipping fake dates.
+-->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Events</div>
+      <h2 class="section-title">Upcoming Webinars <span class="tag-todo">PLACEHOLDER DATES</span></h2>
+    </div>
+    <div class="event-grid">
+      <div class="event-card">
+        <div class="event-date"><span class="day">00</span><span class="mon">Mon</span></div>
+        <h3>[Webinar title — e.g. "Why CRM Adoption Fails in Japanese SMBs"]</h3>
+        <p class="event-meta">[Time] · Online</p>
+      </div>
+      <div class="event-card">
+        <div class="event-date"><span class="day">00</span><span class="mon">Mon</span></div>
+        <h3>[Webinar title — e.g. "Mining Dormant Customers with AI"]</h3>
+        <p class="event-meta">[Time] · Online</p>
+      </div>
+      <div class="event-card">
+        <div class="event-date"><span class="day">00</span><span class="mon">Mon</span></div>
+        <h3>[Webinar title — e.g. Live product demo + Q&A]</h3>
+        <p class="event-meta">[Time] · Online</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  SECTION: Testimonials (site's "Feedback from our Investors")
+  SOURCE: n/a
+  STATUS: PLACEHOLDER — pre-PMF, no real customers yet per Financial Model doc.
+          Do not fabricate quotes for launch; keep this section hidden or
+          clearly marked until real pilot feedback exists.
+-->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Early Feedback</div>
+      <h2 class="section-title">What early testers are saying <span class="tag-todo">PLACEHOLDER — NOT REAL QUOTES</span></h2>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p class="quote">"[Placeholder quote — replace once a real pilot user gives feedback. Do not publish a fabricated testimonial.]"</p>
+        <div class="who"><div class="avatar"></div><div><strong>[Name]</strong><span>[Title, Company]</span></div></div>
+        <span class="placeholder-flag">NEEDS REAL QUOTE</span>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">"[Placeholder quote]"</p>
+        <div class="who"><div class="avatar"></div><div><strong>[Name]</strong><span>[Title, Company]</span></div></div>
+        <span class="placeholder-flag">NEEDS REAL QUOTE</span>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">"[Placeholder quote]"</p>
+        <div class="who"><div class="avatar"></div><div><strong>[Name]</strong><span>[Title, Company]</span></div></div>
+        <span class="placeholder-flag">NEEDS REAL QUOTE</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  SECTION: Blog / Insights (site's "From Our Blog")
+  SOURCE: docs/business design/03_Business Design.md, §3 マーケティング戦略
+          (content angles: why CRM doesn't stick, dormant-customer mining, attribution)
+  STATUS: PLACEHOLDER titles drafted from the doc's suggested content angles;
+          actual posts need to be written.
+-->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Insights</div>
+      <h2 class="section-title">From the Blog</h2>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <div class="thumb">[PLACEHOLDER IMAGE]</div>
+        <div class="body">
+          <span class="blog-date">[Date]</span>
+          <h3>Why CRM Adoption Fails in Japanese Mid-Market Companies</h3>
+          <p>[Placeholder excerpt — draft from Problem Definition doc §3]</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="thumb">[PLACEHOLDER IMAGE]</div>
+        <div class="body">
+          <span class="blog-date">[Date]</span>
+          <h3>The Hidden Revenue in Your Dormant Customer List</h3>
+          <p>[Placeholder excerpt — draft from Market Intelligence doc §3]</p>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="thumb">[PLACEHOLDER IMAGE]</div>
+        <div class="body">
+          <span class="blog-date">[Date]</span>
+          <h3>Human-in-the-Loop: Why We Don't Let AI Contact Customers</h3>
+          <p>[Placeholder excerpt — draft from PR&amp;FAQ doc, Internal FAQ Q1-Q3]</p>
+        </div>
+      </div>
+    </div>
+    <p class="text-center mt-48"><a href="blog.html">View all posts →</a></p>
+  </div>
+</section>
+
+<!--
+  SECTION: Integrations / Partners (site's "Our banking partners" logo strip)
+  SOURCE: docs/business design/04_Product Requirements & Architecture.md, §8 外部API
+  STATUS: draft product names, PLACEHOLDER actual logo assets
+-->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Integrations</div>
+      <h2 class="section-title">Works with the tools you already have</h2>
+    </div>
+    <div class="logos-strip">
+      <div class="logo-chip">Salesforce</div>
+      <div class="logo-chip">HubSpot</div>
+      <div class="logo-chip">Twenty CRM</div>
+      <div class="logo-chip">[Email/Calendar]</div>
+      <div class="logo-chip">[Voice transcription]</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION: Newsletter signup -->
+<section class="section section--soft">
+  <div class="container">
+    <div class="newsletter">
+      <h2>Get sales-AI insights for Japan's mid-market</h2>
+      <p class="section-sub">One email a month. No spam.</p>
+      <form class="newsletter-form" data-placeholder-form>
+        <input type="email" placeholder="you@company.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Revlytics</a>
+        <p>The AI-native sales workspace for Japan's mid-market and SMB companies. Built by Vantage Partners.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="X">𝕏</a>
+          <a href="#" aria-label="Facebook">f</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="#">Security <span class="tag-todo">TBD PAGE</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul>
+          <li><a href="contact.html">Book a Demo</a></li>
+          <li><a href="contact.html">Start Free Trial</a></li>
+          <li><a href="mailto:hello@revlytics.jp">hello@revlytics.jp</a></li>
+          <li>[+81 00-0000-0000]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vantage Partners. All rights reserved.</span>
+      <div>
+        <a href="#">Privacy Policy <span class="tag-todo">TBD</span></a>
+        <a href="#">Terms of Service <span class="tag-todo">TBD</span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

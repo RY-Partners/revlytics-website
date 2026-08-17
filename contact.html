@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Revlytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!--
+  CONTENT GUIDE: this is also the "Start Free Trial" / "Book a Demo"
+  destination linked from every CTA button site-wide. Form fields below
+  are a reasonable default for a B2B seed-stage lead form — confirm with
+  whoever owns the sales pipeline (CRM/lead routing) before wiring it up.
+  data-placeholder-form on the <form> just shows an alert; wire to a real
+  endpoint before launch.
+-->
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-links"><a href="tel:+81000000000">[+81 00-0000-0000]</a><a href="mailto:hello@revlytics.jp">[hello@revlytics.jp]</a></div>
+    <div class="topbar-lang"><a href="#" class="is-active">EN</a><a href="#">日本語</a></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand"><span class="brand-mark"></span>Revlytics</a>
+    <nav class="nav-links">
+      <a href="index.html#product">Product</a>
+      <a href="index.html#features">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">Company</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost">Log In</a>
+      <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Contact</div>
+    <h1 class="section-title">Start your 14-day free trial</h1>
+    <p class="section-sub">Tell us a bit about your team — we'll follow up within one business day.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div>
+      <form data-placeholder-form>
+        <div class="form-field"><label>Full Name</label><input type="text" required></div>
+        <div class="form-field"><label>Work Email</label><input type="email" required></div>
+        <div class="form-field"><label>Company Name</label><input type="text" required></div>
+        <div class="form-field">
+          <label>Company Size</label>
+          <select>
+            <option>Under 10 employees</option>
+            <option>10–50 employees</option>
+            <option>50–200 employees</option>
+            <option>200+ employees</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>What's your biggest sales challenge right now?</label>
+          <textarea rows="4" placeholder="[Placeholder helper text — e.g. 'Dormant customers we've never followed up on', 'Our CRM data is a mess', ...]"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-lg">Request Free Trial</button>
+        <p style="font-size:12.5px; color:var(--muted-2); text-align:center; margin-top:12px;">No credit card required. <span class="tag-todo">FORM NOT WIRED TO BACKEND YET</span></p>
+      </form>
+    </div>
+    <div>
+      <div class="contact-info-item">
+        <div class="icon">✉️</div>
+        <div><strong>Email</strong><p>hello@revlytics.jp</p></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="icon">📞</div>
+        <div><strong>Phone</strong><p>[+81 00-0000-0000]</p></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="icon">📍</div>
+        <div><strong>Office</strong><p>[Vantage Partners address — PLACEHOLDER]</p></div>
+      </div>
+      <div class="contact-info-item">
+        <div class="icon">💼</div>
+        <div><strong>Careers</strong><p>Product, engineering, and CS roles opening soon — email us to get on the list.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Revlytics</a>
+        <p>The AI-native sales workspace for Japan's mid-market and SMB companies. Built by Vantage Partners.</p>
+        <div class="footer-social"><a href="#">in</a><a href="#">𝕏</a><a href="#">f</a></div>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="index.html#features">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+      <div class="footer-col"><h4>Get Started</h4><ul><li><a href="contact.html">Book a Demo</a></li><li><a href="mailto:hello@revlytics.jp">hello@revlytics.jp</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Vantage Partners. All rights reserved.</span><div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

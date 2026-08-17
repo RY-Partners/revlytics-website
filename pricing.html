@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Revlytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!--
+  CONTENT GUIDE: this page maps to the "ICO Plan" page in the reference
+  template. Plan structure and pricing model are pulled directly from
+  docs/business design/03_Business Design.md §2 (Revenue Model) and
+  05_Financial Model.md §1 (assumptions) — see CONTENT-GUIDE.md.
+
+  IMPORTANT — pricing flagged in VC-RESPONSE.md diligence memo:
+  the business-design doc's ¥150k-400k/month figure was found to be
+  5-15x above real comparable Japan SFA/CRM pricing (Mazrica, kintone,
+  UPWARD cluster at ¥10k-50k/month for this same ICP). This page
+  currently ships the doc's original figures as a DRAFT placeholder —
+  pricing/finance should confirm the final number before this goes live.
+-->
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-links">
+      <a href="tel:+81000000000">[+81 00-0000-0000]</a>
+      <a href="mailto:hello@revlytics.jp">[hello@revlytics.jp]</a>
+    </div>
+    <div class="topbar-lang"><a href="#" class="is-active">EN</a><a href="#">日本語</a></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand"><span class="brand-mark"></span>Revlytics</a>
+    <nav class="nav-links">
+      <a href="index.html#product">Product</a>
+      <a href="index.html#features">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">Company</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost">Log In</a>
+      <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Pricing</div>
+    <h1 class="section-title">Two plans, priced for how you actually use it <span class="tag-todo">FIGURES NEED FINANCE SIGN-OFF</span></h1>
+    <p class="section-sub">14-day free trial on either plan. No credit card required.</p>
+  </div>
+</section>
+
+<!--
+  SOURCE: docs/business design/03_Business Design.md §2 (Freeプラン / Proプラン)
+  STATUS: draft structure, PLACEHOLDER dollar figures pending re-pricing
+-->
+<section class="section">
+  <div class="container">
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Free</h3>
+        <p class="plan-desc">Shared workspace, low-friction start. Good for a first pilot team.</p>
+        <div class="price">¥0<span> to start</span></div>
+        <ul class="plan-features">
+          <li>Multi-tenant (shared database, tenant_id-scoped)</li>
+          <li>Up to [X] seats <span class="tag-todo">TBD</span></li>
+          <li>Priority account recommendations</li>
+          <li>Persistent AI chat assistant</li>
+          <li>Voice / text / form activity capture</li>
+          <li>Standard CRM sync</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline btn-block">Start Free Trial</a>
+      </div>
+      <div class="price-card is-featured">
+        <span class="plan-badge">Most Common</span>
+        <h3>Pro</h3>
+        <p class="plan-desc">Dedicated single-tenant environment, higher security, priority support.</p>
+        <div class="price">¥[150,000–400,000]<span>/month <span class="tag-todo">RE-VERIFY</span></span></div>
+        <ul class="plan-features">
+          <li>Single-tenant (dedicated, isolated environment)</li>
+          <li>10–30 seats typical <span class="tag-todo">TBD</span></li>
+          <li>Everything in Free, plus:</li>
+          <li>Advanced AI analysis &amp; personalized recommendations</li>
+          <li>Bidirectional CRM sync (Salesforce / HubSpot)</li>
+          <li>Priority onboarding support</li>
+        </ul>
+        <a href="contact.html" class="btn btn-primary btn-block">Talk to Sales</a>
+      </div>
+    </div>
+
+    <div class="addon-grid">
+      <div class="addon-card">
+        <h4>Onboarding Services</h4>
+        <p>Data cleanup, business-card digitization, CRM migration. Priced separately — the thing that removes the #1 reason SMBs stall on adoption.</p>
+      </div>
+      <div class="addon-card">
+        <h4>Professional Services</h4>
+        <p>AI tuning, sales-process design, dashboard setup, and adoption support as your team scales usage.</p>
+      </div>
+      <div class="addon-card">
+        <h4>Add-Ons</h4>
+        <p>Additional seats, extra CRM/integration connections, and CS/marketing-module expansion as those ship.</p>
+      </div>
+    </div>
+    <p class="text-center mt-48" style="color:var(--muted); font-size:14px;">
+      SOURCE NOTE FOR WRITERS: pricing philosophy per Business Design doc — anchor on
+      "time created / revenue found / input burden removed," not seat count alone.
+      See CONTENT-GUIDE.md before finalizing copy or numbers on this page.
+    </p>
+  </div>
+</section>
+
+<!--
+  SECTION: FAQ
+  SOURCE: docs/business design/01_PR＆FAQ.md — External FAQ Q1-Q7, lifted near-verbatim
+  and translated/tightened. This is real strategic material, not filler —
+  safe to polish rather than replace.
+-->
+<section class="section section--soft">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">FAQ</div>
+      <h2 class="section-title">Common questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item is-open">
+        <div class="faq-q"><span>How is Revlytics different from my existing CRM or SFA?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Revlytics isn't built to replace Salesforce or HubSpot. Traditional CRM/SFA focuses on recording and managing activity. Revlytics analyzes the data you already have and actively tells reps who to contact and what to offer — freeing up time for actual customer conversations instead of deciding where to start.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Does the AI ever contact a customer automatically?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>No. The rep always makes the final call and takes the final action. The AI analyzes data and recommends a next step and channel — sending an email or making a call is always a human decision. This "human-in-the-loop" principle is core to the product, not a limitation.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Can we use Revlytics if our customer data is a mess?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes — business cards, spreadsheets, and inconsistent legacy lists all work. Onboarding includes data-cleansing and digitization support so messy source data isn't a blocker to getting started.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do we need a CRM already in place?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>No. Revlytics syncs bidirectionally with major CRMs where you have one, but works as a standalone workspace if you don't — recording and organizing sales activity as your system of record from day one.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>What kind of company is this built for?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Mid-market and SMB companies where sales resources are stretched thin — especially those wanting to mine dormant customers, put old business-card/contact data to work, reduce dependence on individual reps' tribal knowledge, or simply cut daily CRM input burden.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>What data does the AI actually analyze?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Contract status, deal/negotiation history, communication history, and (where available) web activity — combined to surface who's worth prioritizing right now and what would resonate with them.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Does Revlytics integrate with tools we already use?</span><span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes — major CRMs, email systems, and phone/call infrastructure are all supported integration targets. Specific connectors are confirmed during onboarding.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2>Not sure which plan fits?</h2>
+        <p>Tell us about your team and we'll recommend a starting point.</p>
+      </div>
+      <a href="contact.html" class="btn btn-on-dark btn-lg">Talk to Us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Revlytics</a>
+        <p>The AI-native sales workspace for Japan's mid-market and SMB companies. Built by Vantage Partners.</p>
+        <div class="footer-social"><a href="#">in</a><a href="#">𝕏</a><a href="#">f</a></div>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how-it-works">How It Works</a></li><li><a href="pricing.html">Pricing</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Careers</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Started</h4>
+        <ul><li><a href="contact.html">Book a Demo</a></li><li><a href="mailto:hello@revlytics.jp">hello@revlytics.jp</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Vantage Partners. All rights reserved.</span>
+      <div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

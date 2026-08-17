@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Revlytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+
+<!--
+  CONTENT GUIDE: maps to the template's "About Us" / "Our Team" / "Our
+  History" pages combined into one. Moat section is linked from the
+  homepage's statement banner ("Why This Is Different"); roadmap section
+  is linked from the homepage features section. See CONTENT-GUIDE.md.
+-->
+
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-links"><a href="tel:+81000000000">[+81 00-0000-0000]</a><a href="mailto:hello@revlytics.jp">[hello@revlytics.jp]</a></div>
+    <div class="topbar-lang"><a href="#" class="is-active">EN</a><a href="#">日本語</a></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand"><span class="brand-mark"></span>Revlytics</a>
+    <nav class="nav-links">
+      <a href="index.html#product">Product</a>
+      <a href="index.html#features">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">Company</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost">Log In</a>
+      <a href="contact.html" class="btn btn-primary">Start Free Trial</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Company</div>
+    <h1 class="section-title">We think the CRM is asking the wrong question</h1>
+    <p class="section-sub">Most systems ask "what happened?" We think the job is answering "what should happen next?"</p>
+  </div>
+</section>
+
+<!--
+  SECTION: Mission / origin
+  SOURCE: docs/business design/00_Problem Definition.md §6 (Problem Statement)
+  STATUS: draft
+-->
+<section class="section">
+  <div class="container" style="max-width:760px;">
+    <div class="eyebrow">Our Mission</div>
+    <h2 class="section-title">[PLACEHOLDER — founder-voice origin story]</h2>
+    <p>Companies hold valuable customer data, but it's never actually integrated into a salesperson's daily decisions. So reps end up prioritizing and pitching from memory and gut instinct — and real, findable revenue gets left on the table, every day.</p>
+    <p>We started Vantage Partners to build the workspace that closes that gap — not by replacing the systems companies already have, but by becoming the screen a rep opens first, every morning, before anything else.</p>
+    <p style="color:var(--muted); font-size:14px;">[Content writer: replace this with the founders' actual origin story — what they saw firsthand that made them build this. Draft above is scaffolding from the Problem Definition doc, not a real founder quote.]</p>
+  </div>
+</section>
+
+<!--
+  SECTION: Why This Is Different (moat)
+  SOURCE: docs/business design/03_Business Design.md §5 Competitive Moat
+  STATUS: draft
+  NOTE FOR WRITER: VC-RESPONSE.md diligence memo found that "system of
+  action / first screen" positioning is already used by Attio, Rox, and
+  Salesforce's own 2026 release, and that Sansan/Mazrica/UPWARD already
+  ship comparable next-best-action features in Japan specifically. Keep
+  this section honest about *where* the real edge is (SMB-focused
+  onboarding + data lock-in over time), not "nobody else does this."
+-->
+<section class="section section--soft" id="moat">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Why This Is Different</div>
+      <h2 class="section-title">The moat isn't the AI. It's the habit.</h2>
+      <p class="section-sub">Every CRM will ship "AI" soon. What compounds is what happens after a rep opens Revlytics every morning for a year.</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="icon" style="background:var(--gold-soft); color:var(--gold-text);">📊</div>
+        <h3>Data Advantage</h3>
+        <p>Every call, activity, and deal outcome accumulates automatically, making recommendations more specific to your business over time.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon" style="background:var(--gold-soft); color:var(--gold-text);">🔁</div>
+        <h3>Workflow Lock-In</h3>
+        <p>The more it's the first screen a rep opens, the higher the real cost of switching away from it.</p>
+      </div>
+      <div class="problem-card">
+        <div class="icon" style="background:var(--gold-soft); color:var(--gold-text);">🛠️</div>
+        <h3>Onboarding Know-How</h3>
+        <p>Data cleanup and business-process design, templated over time into a repeatable, low-friction onboarding motion for SMBs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  SECTION: Roadmap
+  SOURCE: docs/PRODUCT.md "Vision" section / Business Design §7 Scale Strategy
+  STATUS: draft
+-->
+<section class="section" id="roadmap">
+  <div class="container" style="max-width:760px;">
+    <div class="section-head center" style="margin-inline:auto;">
+      <div class="eyebrow">Roadmap</div>
+      <h2 class="section-title">Where we're headed</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="timeline-tag">Phase 1 — Now</span>
+        <h4>Win the daily habit</h4>
+        <p>Priority accounts, persistent AI assistance, and activity capture that requires no extra work from the rep.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-tag">Phase 2</span>
+        <h4>Extend across the full sales motion</h4>
+        <p>Email, calls, calendar, and deal-loss analysis — deepening what the AI can see and act on.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-tag">Phase 3</span>
+        <h4>Become a Revenue Platform</h4>
+        <p>Extend into marketing, customer success, renewals, and support — one operating system for the front office.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-tag">Phase 4</span>
+        <h4>Expand beyond Japan</h4>
+        <p>Take the same playbook to the broader APAC market, where similar sales-DX gaps exist.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+  SECTION: Team
+  SOURCE: docs/business design/01_PR＆FAQ.md press release byline
+  STATUS: draft names, PLACEHOLDER bios
+-->
+<section class="section section--soft" id="team">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Team</div>
+      <h2 class="section-title">Founders</h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">[PHOTO]</div>
+        <h3>Hiroki Yamaguchi</h3>
+        <div class="team-role">Co-Founder</div>
+        <p>[PLACEHOLDER BIO]</p>
+        <div class="socials"><a href="#">in</a><a href="#">𝕏</a></div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">[PHOTO]</div>
+        <h3>Mashiur Rahman</h3>
+        <div class="team-role">Co-Founder</div>
+        <p>[PLACEHOLDER BIO]</p>
+        <div class="socials"><a href="#">in</a><a href="#">𝕏</a></div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">＋</div>
+        <h3>We're Hiring</h3>
+        <div class="team-role">Join Early</div>
+        <p>See open roles as we approach first pilots.</p>
+        <div class="socials"><a href="contact.html">Open roles →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-banner">
+      <div><h2>Want to talk to the team directly?</h2><p>We're always happy to walk through the product ourselves.</p></div>
+      <a href="contact.html" class="btn btn-on-dark btn-lg">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Revlytics</a>
+        <p>The AI-native sales workspace for Japan's mid-market and SMB companies. Built by Vantage Partners.</p>
+        <div class="footer-social"><a href="#">in</a><a href="#">𝕏</a><a href="#">f</a></div>
+      </div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="index.html#features">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Careers</a></li></ul></div>
+      <div class="footer-col"><h4>Get Started</h4><ul><li><a href="contact.html">Book a Demo</a></li><li><a href="mailto:hello@revlytics.jp">hello@revlytics.jp</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Vantage Partners. All rights reserved.</span><div><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div></div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
