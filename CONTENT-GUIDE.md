@@ -46,25 +46,21 @@ the same information laid out as a table, for planning purposes.
 
 ## Known tension the writer should know about
 
-**Pricing (`pricing.html`) currently ships the business-design doc's
-original ¥150,000–400,000/month figure as a placeholder.** Our own outside
-diligence review (`docs/VC-RESPONSE.md`, if still in repo history / ask
-whoever owns it) found this priced 5–15x above real comparable Japan SFA/CRM
-tools serving the same customer profile (Mazrica ~¥27.5k/mo, kintone
-¥10–30k/mo, UPWARD ¥21k/mo). **Do not treat the number on the pricing page
-as final** — flag to founders/finance before publishing real pricing copy.
+**Pricing (`pricing.html`) currently ships an early planning-stage
+¥150,000–400,000/month figure as a placeholder.** This has not been
+validated against the market and should not be treated as final —
+flag to founders/finance before publishing real pricing copy.
 
 ## Tone
 
-Pull the voice directly from `docs/PRODUCT.md` and the PR&FAQ doc:
+Pull the voice directly from the product positioning doc and the PR&FAQ doc:
 - Lead with the outcome for the rep's actual Tuesday morning, not the AI.
 - Say plainly that a human always makes the final call — this is a feature,
   not a hedge.
-- Avoid claiming category exclusivity ("nobody else does this") — internal
-  diligence found this isn't true globally (Attio, Rox, Salesforce) or in
-  Japan (Sansan, Mazrica, UPWARD). Frame the edge as *habit + data
-  compounding over time for an underserved SMB segment*, not as an
-  unclaimed concept.
+- Avoid claiming category exclusivity ("nobody else does this") — this
+  general style of positioning is used elsewhere in the market too. Frame
+  the edge as *habit + data compounding over time for an underserved SMB
+  segment*, not as an unclaimed concept.
 
 ## Assets still needed before this can go live
 
